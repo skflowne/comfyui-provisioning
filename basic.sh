@@ -26,6 +26,7 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
     "https://github.com/crystian/ComfyUI-Crystools"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
 )
 
