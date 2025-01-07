@@ -34,7 +34,7 @@ CHECKPOINT_MODELS=(
 )
 
 UNET_MODELS=(
-
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/flux1-dev.safetensors"
 )
 
 LORA_MODELS=(
@@ -42,6 +42,7 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/ae.safetensors"
 )
 
 ESRGAN_MODELS=(
