@@ -24,6 +24,8 @@ NODES=(
     "https://github.com/rgthree/rgthree-comfy"
     "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
 )
 
