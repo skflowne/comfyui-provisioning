@@ -51,7 +51,7 @@ UNET_MODELS=(
     # "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
     # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/blob/main/flux1-fill-dev.safetensors"
     # F1S
-    "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/blob/main/shuttle-3.1-aesthetic.safetensors"
+    "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
 )
 
 LORA_MODELS=(
@@ -81,7 +81,7 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
-    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors"
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors" # FLUX VAE
 )
 
 ESRGAN_MODELS=(
