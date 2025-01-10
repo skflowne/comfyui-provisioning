@@ -28,6 +28,7 @@ NODES=(
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
+    "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
 )
 
 CHECKPOINT_MODELS=(
