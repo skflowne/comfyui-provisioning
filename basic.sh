@@ -31,6 +31,13 @@ NODES=(
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
 )
 
+CLIP_MODELS=(
+    "https://huggingface.co/city96/t5-v1_1-xxl-encoder-bf16/resolve/main/model.safetensors" # T5 xxl 1.1
+    # Pick one CLIP-L model
+    "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/blob/main/ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors" # TEXT (better prompt following and for images with text, probably better overall)
+    # "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/blob/main/ViT-L-14-BEST-smooth-GmP-TE-only-HF-format.safetensors" # SMOOTH (better details when no text in image, maybe)
+)
+
 CHECKPOINT_MODELS=(
     # Illustrious SDXL
     "https://civitai.com/api/download/models/1233363" # coco NoobAI
@@ -95,6 +102,9 @@ function provisioning_start() {
     provisioning_get_apt_packages
     provisioning_get_nodes
     provisioning_get_pip_packages
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/clip" \
+        "${CLIP_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
