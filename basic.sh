@@ -28,10 +28,19 @@ NODES=(
     "https://github.com/crystian/ComfyUI-Crystools"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words"
 
-    # extras
+    # image
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
+
+    # video
+    # "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    # "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper"
+    # "https://github.com/Lightricks/ComfyUI-LTXVideo"
+    # "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
+    
+    
 )
 
 CLIP_MODELS=(
@@ -248,7 +257,7 @@ function provisioning_download() {
         auth_token="$CIVITAI_TOKEN"
     fi
     if [[ -n $auth_token ]];then
-        wget --header="Authorization: Bearer $auth_token" -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
+        wget "$1?token=$CIVITAI_TOKEN" -qnc --content-disposition
     else
         wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
