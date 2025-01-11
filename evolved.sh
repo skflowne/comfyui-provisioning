@@ -29,6 +29,9 @@ NODES=(
     "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
 
+    # controlnet
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
+
     # redux
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl"
     
@@ -108,6 +111,10 @@ ESRGAN_MODELS=(
 )
 
 CONTROLNET_MODELS=(
+    # F1D
+    "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-canny-controlnet-v3.safetensors"
+    # "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-depth-controlnet-v3.safetensors"
+    # "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-hed-controlnet-v3.safetensors"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
