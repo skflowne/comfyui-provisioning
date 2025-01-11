@@ -23,16 +23,20 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Manager"
     "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/rgthree/rgthree-comfy"
-    "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
     "https://github.com/crystian/ComfyUI-Crystools"
-    "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
+    "https://github.com/WASasquatch/was-node-suite-comfyui"
+    
+    # utils
     "https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words"
+    "https://github.com/jags111/efficiency-nodes-comfyui"
 
     # image
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
+    "https://github.com/SLAPaper/ComfyUI-Image-Selector"
 
     # video
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
@@ -58,7 +62,7 @@ CHECKPOINT_MODELS=(
 UNET_MODELS=(
     # F1D
     "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
-    "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/blob/main/flux1-fill-dev.safetensors"
+    "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
     # F1S
     "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
 )
@@ -251,13 +255,10 @@ function provisioning_has_valid_civitai_token() {
 # Download from $1 URL to $2 file path
 function provisioning_download() {
     if [[ -n $HF_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
-        auth_token="$HF_TOKEN"
+        wget --content-disposition --header="Authorization: Bearer $HF_TOKEN" "$1" --show-progress -e dotbytes="${3:-4M}"
     elif 
         [[ -n $CIVITAI_TOKEN && $1 =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
-        auth_token="$CIVITAI_TOKEN"
-    fi
-    if [[ -n $auth_token ]];then
-        wget "$1?token=$CIVITAI_TOKEN" -qnc --content-disposition
+        wget "$1?token=$CIVITAI_TOKEN" -nc --content-disposition --show-progress -e dotbytes="${3:-4M}"
     else
         wget -qnc --content-disposition --show-progress -e dotbytes="${3:-4M}" -P "$2" "$1"
     fi
