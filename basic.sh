@@ -35,7 +35,7 @@ NODES=(
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
 
     # video
-    # "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     # "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper"
     # "https://github.com/Lightricks/ComfyUI-LTXVideo"
     # "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
@@ -57,18 +57,18 @@ CHECKPOINT_MODELS=(
 
 UNET_MODELS=(
     # F1D
-    # "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
-    # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/blob/main/flux1-fill-dev.safetensors"
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+    "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/blob/main/flux1-fill-dev.safetensors"
     # F1S
     "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
 )
 
 LORA_MODELS=(
     # F1D
-    # "https://civitai.com/api/download/models/955535" # 
-    # "https://civitai.com/api/download/models/1224481" # Illustration Concept
+    "https://civitai.com/api/download/models/955535" # 
+    "https://civitai.com/api/download/models/1224481" # Illustration Concept
     "https://civitai.com/api/download/models/981456" # Midjourney meets FLUX
-    # "https://civitai.com/api/download/models/755549" # Sinfully stylish
+    "https://civitai.com/api/download/models/755549" # Sinfully stylish
     "https://civitai.com/api/download/models/890482" # Ink Style
     "https://civitai.com/api/download/models/803802" # Cartoon Line Warm Illustration
     "https://civitai.com/api/download/models/897256" # Car & Bikes
