@@ -303,3 +303,5 @@ function provisioning_download() {
         wget -qnc --content-disposition --show-progress -e dotbytes="$dotbytes" -P "$dir" "$url"
     fi
 }
+
+provisioning_start
