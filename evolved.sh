@@ -61,6 +61,10 @@ CLIP_MODELS=(
     # "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/blob/main/ViT-L-14-BEST-smooth-GmP-TE-only-HF-format.safetensors" # SMOOTH (better details when no text in image, maybe)
 )
 
+CLIP_VISION_MODELS=(
+    "https://huggingface.co/Comfy-Org/sigclip_vision_384/resolve/main/sigclip_vision_patch14_384.safetensors" # Used with Redux
+)
+
 CHECKPOINT_MODELS=(
     # Illustrious SDXL
     # "https://civitai.com/api/download/models/1233363" # coco NoobAI
