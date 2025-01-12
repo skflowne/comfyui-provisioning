@@ -63,17 +63,20 @@ CLIP_MODELS=(
 
 CHECKPOINT_MODELS=(
     # Illustrious SDXL
-    "https://civitai.com/api/download/models/1233363" # coco NoobAI
+    # "https://civitai.com/api/download/models/1233363" # coco NoobAI
 )
 
 UNET_MODELS=(
     # F1D
-    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+    "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
+    # "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+    
     # F1D Tools
-    "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
+    # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
     "https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev/resolve/main/flux1-redux-dev.safetensors"
+    
     # F1S
-    "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
+    # "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
 )
 
 LORA_MODELS=(
