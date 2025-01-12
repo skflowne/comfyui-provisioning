@@ -142,6 +142,9 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/clip" \
         "${CLIP_MODELS[@]}"
     provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
+        "${CLIP__VISION_MODELS[@]}"
+    provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
