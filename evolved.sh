@@ -31,6 +31,7 @@ NODES=(
 
     # controlnet
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/XLabs-AI/x-flux-comfyui"
 
     # redux
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl"
