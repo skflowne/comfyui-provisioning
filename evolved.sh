@@ -62,7 +62,8 @@ CLIP_MODELS=(
 )
 
 CLIP_VISION_MODELS=(
-    "https://huggingface.co/Comfy-Org/sigclip_vision_384/resolve/main/sigclip_vision_patch14_384.safetensors" # Used with Redux
+    "https://huggingface.co/funnewsr/sigclip_vision_patch14_384/resolve/main/sigclip_vision_patch14_384.safetensors" # For some reason the model below fails
+    # "https://huggingface.co/Comfy-Org/sigclip_vision_384/resolve/main/sigclip_vision_patch14_384.safetensors" # Used with Redux
 )
 
 CHECKPOINT_MODELS=(
@@ -72,15 +73,15 @@ CHECKPOINT_MODELS=(
 
 UNET_MODELS=(
     # F1D
-    "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
+    # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
     "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
     
     # F1D Tools
-    "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
+    # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
     "https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev/resolve/main/flux1-redux-dev.safetensors"
     
     # F1S
-    "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
+    # "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
 )
 
 LORA_MODELS=(
