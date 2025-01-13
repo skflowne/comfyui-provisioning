@@ -315,16 +315,16 @@ function get_filename_from_url() {
 
 # Modified download function to support directory parameter
 function provisioning_download() {
-    local url=$1
+    local URL=$1
     local dir=$2
     local dotbytes=${3:-4M}
     
     if [[ -n $HF_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
-        (cd "$dir" && wget --content-disposition --header="Authorization: Bearer $HF_TOKEN" "$url" --show-progress -e dotbytes="$dotbytes")
+        (cd "$dir" && wget --content-disposition --header="Authorization: Bearer $HF_TOKEN" "$URL" --show-progress -e dotbytes="$dotbytes")
     elif [[ -n $CIVITAI_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
-        (cd "$dir" && wget "$url?token=$CIVITAI_TOKEN" -nc --content-disposition --show-progress -e dotbytes="$dotbytes")
+        (cd "$dir" && wget "$URL?token=$CIVITAI_TOKEN" -nc --content-disposition --show-progress -e dotbytes="$dotbytes")
     else
-        wget -qnc --content-disposition --show-progress -e dotbytes="$dotbytes" -P "$dir" "$url"
+        wget -qnc --content-disposition --show-progress -e dotbytes="$dotbytes" -P "$dir" "$URL"
     fi
 }
 
