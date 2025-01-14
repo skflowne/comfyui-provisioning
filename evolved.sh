@@ -78,10 +78,13 @@ UNET_MODELS=(
     
     # F1D Tools
     # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
-    "https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev/resolve/main/flux1-redux-dev.safetensors"
     
     # F1S
     # "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
+)
+
+STYLE_MODELS=(
+    "https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev/resolve/main/flux1-redux-dev.safetensors" # F1D Redux
 )
 
 LORA_MODELS=(
@@ -143,8 +146,11 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/clip" \
         "${CLIP_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
-        "${CLIP__VISION_MODELS[@]}"
+        "/opt/ComfyUI/models/clip_vision" \
+        "${CLIP_VISION_MODELS[@]}"
+    provisioning_get_models \
+        "/opt/ComfyUI/models/style_models" \
+        "${STYLE_VISION_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
