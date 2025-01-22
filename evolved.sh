@@ -61,6 +61,11 @@ CLIP_MODELS=(
     # "https://huggingface.co/zer0int/CLIP-GmP-ViT-L-14/blob/main/ViT-L-14-BEST-smooth-GmP-TE-only-HF-format.safetensors" # SMOOTH (better details when no text in image, maybe)
 )
 
+TEXT_ENCODERS=(
+    # "https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/resolve/main/split_files/text_encoders/llava_llama3_fp16.safetensors" # Hunyuan
+    # "https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/resolve/main/split_files/text_encoders/clip_l.safetensors"
+)
+
 CLIP_VISION_MODELS=(
     "https://huggingface.co/funnewsr/sigclip_vision_patch14_384/resolve/main/sigclip_vision_patch14_384.safetensors" # For some reason the model below fails
     # "https://huggingface.co/Comfy-Org/sigclip_vision_384/resolve/main/sigclip_vision_patch14_384.safetensors" # Used with Redux
@@ -72,6 +77,9 @@ CHECKPOINT_MODELS=(
 )
 
 UNET_MODELS=(
+    # HunYuan Video
+    # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hunyuan_video_720_cfgdistill_bf16.safetensors"
+    
     # F1D
     # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
     "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
@@ -88,6 +96,8 @@ STYLE_MODELS=(
 )
 
 LORA_MODELS=(
+    # HunYuan
+    # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hyvideo_FastVideo_LoRA-fp8.safetensors" # Fast 8-steps LORA
     # F1D
     "https://civitai.com/api/download/models/955535" # 
     "https://civitai.com/api/download/models/1224481" # Illustration Concept
@@ -115,6 +125,7 @@ LORA_MODELS=(
 
 VAE_MODELS=(
     "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors" # FLUX VAE
+    # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hunyuan_video_vae_bf16.safetensors" # HunYuan VAE
 )
 
 ESRGAN_MODELS=(
@@ -128,6 +139,7 @@ CONTROLNET_MODELS=(
     # "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-depth-controlnet-v3.safetensors"
     # "https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-hed-controlnet-v3.safetensors"
 )
+
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
