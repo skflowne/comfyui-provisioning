@@ -28,6 +28,18 @@ NODES=(
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
+    "https://github.com/Smirnov75/ComfyUI-mxToolkit"
+
+    # aio advanced workflow
+    "https://github.com/theUpsider/ComfyUI-Logic"
+    "https://github.com/JPS-GER/ComfyUI_JPS-Nodes"
+    "https://github.com/alt-key-project/comfyui-dream-project"
+    "https://github.com/yolain/ComfyUI-Easy-Use"
+    "https://github.com/darkpixel/darkprompts"
+    "https://github.com/11dogzi/Comfyui-ergouzi-Nodes"
+    "https://github.com/Koushakur/ComfyUI-DenoiseChooser"
+    "https://github.com/TTPlanetPig/Comfyui_TTP_Toolset"
 
     # controlnet
     # "https://github.com/Fannovel16/comfyui_controlnet_aux"
@@ -35,19 +47,35 @@ NODES=(
 
     # redux
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl"
+
+    # captioning
+    "https://github.com/pharmapsychotic/comfy-cliption"
     
     # utils
     "https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words"
     "https://github.com/jags111/efficiency-nodes-comfyui"
+   
 
+    # quality improvement
+    "https://github.com/Jonseed/ComfyUI-Detail-Daemon"
+    
     # image
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
     "https://github.com/SLAPaper/ComfyUI-Image-Selector"
 
     # video
+    "https://github.com/ShmuelRonen/ComfyUI-ImageMotionGuider"
+    "https://github.com/Amorano/Jovimetrix"
+    "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+
+    # hunyuan video
+    "https://github.com/facok/ComfyUI-TeaCacheHunyuanVideo"
+    "https://github.com/facok/ComfyUI-HunyuanVideoMultiLora"
     "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper"
+    "https://github.com/ShmuelRonen/ComfyUI-HunyuanVideoStyler"
+    
     # "https://github.com/Lightricks/ComfyUI-LTXVideo"
     # "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
     
@@ -85,6 +113,12 @@ STYLE_MODELS=(
 LORA_MODELS=(
     # HunYuan
     "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hyvideo_FastVideo_LoRA-fp8.safetensors" # Fast 8-steps LORA
+
+    # styles
+    "https://civitai.com/api/download/models/1315010" # Flat Color Style
+    "https://civitai.com/api/download/models/1258988" # Minrill Animation Style
+    "https://civitai.com/api/download/models/1197852" # Legend of Mortal Style
+    
 )
 
 VAE_MODELS=(
