@@ -100,6 +100,7 @@ LORA_MODELS=(
     # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hyvideo_FastVideo_LoRA-fp8.safetensors" # Fast 8-steps LORA
     # F1D
     # "https://civitai.com/api/download/models/1224481" # Illustration Concept
+    "https://civitai.com/api/download/models/1244911" # FLUX [pro] 1.1 Style
     "https://civitai.com/api/download/models/981456" # Midjourney meets FLUX
     "https://civitai.com/api/download/models/755549" # Sinfully stylish
     "https://civitai.com/api/download/models/890482" # Ink Style
