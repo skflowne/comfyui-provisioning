@@ -99,13 +99,27 @@ LORA_MODELS=(
     # HunYuan
     # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hyvideo_FastVideo_LoRA-fp8.safetensors" # Fast 8-steps LORA
     # F1D
-    "https://civitai.com/api/download/models/955535" # 
-    "https://civitai.com/api/download/models/1224481" # Illustration Concept
+    # "https://civitai.com/api/download/models/1224481" # Illustration Concept
     "https://civitai.com/api/download/models/981456" # Midjourney meets FLUX
     "https://civitai.com/api/download/models/755549" # Sinfully stylish
     "https://civitai.com/api/download/models/890482" # Ink Style
     "https://civitai.com/api/download/models/803802" # Cartoon Line Warm Illustration
-    "https://civitai.com/api/download/models/897256" # Car & Bikes
+    # "https://civitai.com/api/download/models/897256" # Car & Bikes
+    "https://civitai.com/api/download/models/687636" # Atmospheric Painting
+    "https://civitai.com/api/download/models/1202162" # Velvet Mythic Fantasy Styles (Gothic Lines)
+    "https://civitai.com/api/download/models/1296986" # Velvet Mythic Fantasy Styles (Anime Lines)
+    "https://civitai.com/api/download/models/753053" # Velvet Mythic Fantasy Styles (Original)
+    "https://civitai.com/api/download/models/747534" # Cyberpunk Anime Style
+    "https://civitai.com/api/download/models/984672" # Flux Image Upgrader / Detail Maximizer / Contrast Fix for low CFG
+    "https://civitai.com/api/download/models/790696" # Satoshi Urushihara Style
+    "https://civitai.com/api/download/models/779278" # Granblue fanstasy style
+    # "https://civitai.com/api/download/models/766438" # DreamART Style
+    "https://civitai.com/api/download/models/857668" # Cinematic Shot
+    "https://civitai.com/api/download/models/801005" # Matte Black
+    "https://civitai.com/api/download/models/806265" # Retro Anmie Style
+    "https://civitai.com/api/download/models/812182" # Cowboy Bebop Style
+    "https://civitai.com/api/download/models/838667" # Flat Colour Anime
+    
     # F1S
     "https://civitai.com/api/download/models/899864" # Diesel Punk
     "https://civitai.com/api/download/models/1003675" # ColorART
@@ -113,14 +127,15 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/806347" # Propaganda Poster
     "https://civitai.com/api/download/models/1090331" # Ghibsky Illustration (Serene and enchanting landscapes)
     "https://civitai.com/api/download/models/770184" # DucHaiten-Cyberpunk-Edgerunners style
-    "https://civitai.com/api/download/models/801986" # Vector Art
-    "https://civitai.com/api/download/models/805268" # Watercolor Painting
+    # "https://civitai.com/api/download/models/801986" # Vector Art
+    # "https://civitai.com/api/download/models/805268" # Watercolor Painting
     "https://civitai.com/api/download/models/1018019" # Scifi Mech Style
     "https://civitai.com/api/download/models/986970" # Mystical Realms of Light
-    "https://civitai.com/api/download/models/833809" # ATV Collage
-    "https://civitai.com/api/download/models/797418" # PsychedeliK
+    # "https://civitai.com/api/download/models/833809" # ATV Collage
+    # "https://civitai.com/api/download/models/797418" # PsychedeliK
     "https://civitai.com/api/download/models/966523" # Mythoscape Painting
-    "https://civitai.com/api/download/models/1220237" # Pseudo ukiyo-e style
+    # "https://civitai.com/api/download/models/1220237" # Pseudo ukiyo-e style
+    
 )
 
 VAE_MODELS=(
