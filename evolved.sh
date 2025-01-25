@@ -121,7 +121,7 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/838667" # Flat Colour Anime
     
     # F1S
-    "https://civitai.com/api/download/models/899864" # Diesel Punk
+    # "https://civitai.com/api/download/models/899864" # Diesel Punk
     "https://civitai.com/api/download/models/1003675" # ColorART
     "https://civitai.com/api/download/models/802216" # Studio Ghibli
     "https://civitai.com/api/download/models/806347" # Propaganda Poster
