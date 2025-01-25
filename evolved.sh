@@ -43,6 +43,7 @@ NODES=(
     # image
     "https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg"
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
     "https://github.com/SLAPaper/ComfyUI-Image-Selector"
 
     # video
