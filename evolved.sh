@@ -122,6 +122,8 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/812182" # Cowboy Bebop Style
     "https://civitai.com/api/download/models/838667" # Flat Colour Anime
     "https://civitai.com/api/download/models/1277410" # Ethereal Brush Anime
+    "https://civitai.com/api/download/models/1366431" # Vibrantly Sharp Style
+    "https://civitai.com/api/download/models/1365837" # Amateur Photography Style
     
     # F1S
     # "https://civitai.com/api/download/models/899864" # Diesel Punk
