@@ -104,7 +104,8 @@ CHECKPOINT_MODELS=(
 
 UNET_MODELS=(
     # HunYuan Video
-    "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hunyuan_video_720_cfgdistill_bf16.safetensors"
+    # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hunyuan_video_720_cfgdistill_bf16.safetensors" # This one appears to need more than a 4090
+    "https://civitai.com/api/download/models/1356617" # Comfy Native FP8
 )
 
 STYLE_MODELS=(
