@@ -182,7 +182,7 @@ function provisioning_start() {
         "${CLIP_VISION_MODELS[@]}"
     provisioning_get_models \
         "/opt/ComfyUI/models/style_models" \
-        "${STYLE_VISION_MODELS[@]}"
+        "${STYLE_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
         "${CHECKPOINT_MODELS[@]}"
