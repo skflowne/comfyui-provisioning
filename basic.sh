@@ -62,35 +62,51 @@ CHECKPOINT_MODELS=(
 UNET_MODELS=(
     # F1D
     "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
-    "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
+    # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
     # F1S
-    "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
+    # "https://huggingface.co/shuttleai/shuttle-3.1-aesthetic/resolve/main/shuttle-3.1-aesthetic.safetensors"
 )
 
 LORA_MODELS=(
     # F1D
-    "https://civitai.com/api/download/models/955535" # 
+    "https://civitai.com/api/download/models/955535" # Flux Pro
     "https://civitai.com/api/download/models/1224481" # Illustration Concept
     "https://civitai.com/api/download/models/981456" # Midjourney meets FLUX
     "https://civitai.com/api/download/models/755549" # Sinfully stylish
     "https://civitai.com/api/download/models/890482" # Ink Style
     "https://civitai.com/api/download/models/803802" # Cartoon Line Warm Illustration
-    "https://civitai.com/api/download/models/897256" # Car & Bikes
+    # "https://civitai.com/api/download/models/897256" # Car & Bikes
+    "https://civitai.com/api/download/models/1483395" # Vibrantly Sharp
+    "https://civitai.com/api/download/models/1511664" # Vibrantly Glowing
+    "https://civitai.com/api/download/models/1462539" # Vibrant Water Color
+    "https://civitai.com/api/download/models/1504976" # Vibrant Anime-like Sky and Clouds
+    "https://civitai.com/api/download/models/993779"  # Outlined Vibrant Anime
+    "https://civitai.com/api/download/models/1191560" # Retro Anime and Comic Style
+    "https://civitai.com/api/download/models/1156871" # PC-98 Style
+    "https://civitai.com/api/download/models/766704" # Soft Pixel Art
+    "https://civitai.com/api/download/models/765098" # Pixel Art Illustration (illustrative shaded)
+    "https://civitai.com/api/download/models/1375784" # Aenami/Alena Aenami style (silhouette)
+    
+    # "https://civitai.com/api/download/models/888290" # Dieselpunk Delight
+    # "https://civitai.com/api/download/models/1532321" # Dieselpunk Painting
+
+    "https://civitai.com/api/download/models/823574" # UI UX Design
+    
     # F1S
     "https://civitai.com/api/download/models/899864" # Diesel Punk
     "https://civitai.com/api/download/models/1003675" # ColorART
     "https://civitai.com/api/download/models/802216" # Studio Ghibli
     "https://civitai.com/api/download/models/806347" # Propaganda Poster
-    "https://civitai.com/api/download/models/1090331" # Ghibsky Illustration (Serene and enchanting landscapes)
-    "https://civitai.com/api/download/models/770184" # DucHaiten-Cyberpunk-Edgerunners style
+    # "https://civitai.com/api/download/models/1090331" # Ghibsky Illustration (Serene and enchanting landscapes)
+    # "https://civitai.com/api/download/models/770184" # DucHaiten-Cyberpunk-Edgerunners style
     "https://civitai.com/api/download/models/801986" # Vector Art
-    "https://civitai.com/api/download/models/805268" # Watercolor Painting
-    "https://civitai.com/api/download/models/1018019" # Scifi Mech Style
-    "https://civitai.com/api/download/models/986970" # Mystical Realms of Light
-    "https://civitai.com/api/download/models/833809" # ATV Collage
-    "https://civitai.com/api/download/models/797418" # PsychedeliK
-    "https://civitai.com/api/download/models/966523" # Mythoscape Painting
-    "https://civitai.com/api/download/models/1220237" # Pseudo ukiyo-e style
+    # "https://civitai.com/api/download/models/805268" # Watercolor Painting
+    # "https://civitai.com/api/download/models/1018019" # Scifi Mech Style
+    #"https://civitai.com/api/download/models/986970" # Mystical Realms of Light
+    # "https://civitai.com/api/download/models/833809" # ATV Collage
+    # "https://civitai.com/api/download/models/797418" # PsychedeliK
+    # "https://civitai.com/api/download/models/966523" # Mythoscape Painting
+    # "https://civitai.com/api/download/models/1220237" # Pseudo ukiyo-e style
 )
 
 VAE_MODELS=(
