@@ -30,8 +30,8 @@ NODES=(
     "https://github.com/WASasquatch/was-node-suite-comfyui"
 
     # controlnet
-    "https://github.com/Fannovel16/comfyui_controlnet_aux"
-    "https://github.com/XLabs-AI/x-flux-comfyui"
+    # "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    # "https://github.com/XLabs-AI/x-flux-comfyui"
 
     # redux
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl"
@@ -65,27 +65,19 @@ CLIP_MODELS=(
 )
 
 TEXT_ENCODERS=(
-    # "https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/resolve/main/split_files/text_encoders/llava_llama3_fp16.safetensors" # Hunyuan
-    # "https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/resolve/main/split_files/text_encoders/clip_l.safetensors"
 )
 
 CLIP_VISION_MODELS=(
-    "https://huggingface.co/funnewsr/sigclip_vision_patch14_384/resolve/main/sigclip_vision_patch14_384.safetensors" # For some reason the model below fails
-    # "https://huggingface.co/Comfy-Org/sigclip_vision_384/resolve/main/sigclip_vision_patch14_384.safetensors" # Used with Redux
+    "https://huggingface.co/funnewsr/sigclip_vision_patch14_384/resolve/main/sigclip_vision_patch14_384.safetensors"
 )
 
 CHECKPOINT_MODELS=(
-    # Illustrious SDXL
-    # "https://civitai.com/api/download/models/1233363" # coco NoobAI
 )
 
 UNET_MODELS=(
-    # HunYuan Video
-    # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hunyuan_video_720_cfgdistill_bf16.safetensors"
-    
     # F1D (Pick one)
-    "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
-    # "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+    # "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors"
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
     
     # F1D Tools
     # "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors"
@@ -99,50 +91,48 @@ STYLE_MODELS=(
 )
 
 LORA_MODELS=(
-    # HunYuan
-    # "https://huggingface.co/Kijai/HunyuanVideo_comfy/resolve/main/hyvideo_FastVideo_LoRA-fp8.safetensors" # Fast 8-steps LORA
-    # F1D
-    # "https://civitai.com/api/download/models/1224481" # Illustration Concept
-    "https://civitai.com/api/download/models/1244911" # FLUX [pro] 1.1 Style
+    "https://civitai.com/api/download/models/955535" # Flux Pro
+    "https://civitai.com/api/download/models/1224481" # Illustration Concept
     "https://civitai.com/api/download/models/981456" # Midjourney meets FLUX
-    "https://civitai.com/api/download/models/755549" # Sinfully stylish
     "https://civitai.com/api/download/models/890482" # Ink Style
     "https://civitai.com/api/download/models/803802" # Cartoon Line Warm Illustration
+    "https://civitai.com/api/download/models/1483395" # Vibrantly Sharp
+    "https://civitai.com/api/download/models/1511664" # Vibrantly Glowing
+    "https://civitai.com/api/download/models/1462539" # Vibrant Water Color
+    "https://civitai.com/api/download/models/1504976" # Vibrant Anime-like Sky and Clouds
+    "https://civitai.com/api/download/models/993779"  # Outlined Vibrant Anime
+    "https://civitai.com/api/download/models/1191560" # Retro Anime and Comic Style
+    "https://civitai.com/api/download/models/1375784" # Aenami/Alena Aenami style (silhouette)
+    # "https://civitai.com/api/download/models/755549" # Sinfully stylish
+    
     # "https://civitai.com/api/download/models/897256" # Car & Bikes
-    "https://civitai.com/api/download/models/687636" # Atmospheric Painting
-    "https://civitai.com/api/download/models/1202162" # Velvet Mythic Fantasy Styles (Gothic Lines)
-    "https://civitai.com/api/download/models/1296986" # Velvet Mythic Fantasy Styles (Anime Lines)
-    "https://civitai.com/api/download/models/753053" # Velvet Mythic Fantasy Styles (Original)
-    "https://civitai.com/api/download/models/747534" # Cyberpunk Anime Style
-    "https://civitai.com/api/download/models/984672" # Flux Image Upgrader / Detail Maximizer / Contrast Fix for low CFG
-    "https://civitai.com/api/download/models/790696" # Satoshi Urushihara Style
-    "https://civitai.com/api/download/models/779278" # Granblue fanstasy style
-    # "https://civitai.com/api/download/models/766438" # DreamART Style
-    "https://civitai.com/api/download/models/857668" # Cinematic Shot
-    "https://civitai.com/api/download/models/801005" # Matte Black
-    "https://civitai.com/api/download/models/806265" # Retro Anmie Style
-    "https://civitai.com/api/download/models/812182" # Cowboy Bebop Style
-    "https://civitai.com/api/download/models/838667" # Flat Colour Anime
-    "https://civitai.com/api/download/models/1277410" # Ethereal Brush Anime
-    "https://civitai.com/api/download/models/1366431" # Vibrantly Sharp Style
-    "https://civitai.com/api/download/models/1365837" # Amateur Photography Style
+    # "https://civitai.com/api/download/models/888290" # Dieselpunk Delight
+    # "https://civitai.com/api/download/models/1532321" # Dieselpunk Painting
+
+    # UI
+    "https://civitai.com/api/download/models/823574" # UI UX Design
+    "https://civitai.com/api/download/models/801986" # Vector Art
+
+    # Pixel Art
+    "https://civitai.com/api/download/models/1156871" # PC-98 Style
+    "https://civitai.com/api/download/models/766704" # Soft Pixel Art
+    "https://civitai.com/api/download/models/765098" # Pixel Art Illustration (illustrative shaded)
     
     # F1S
-    # "https://civitai.com/api/download/models/899864" # Diesel Punk
+    "https://civitai.com/api/download/models/899864" # Diesel Punk
     "https://civitai.com/api/download/models/1003675" # ColorART
     "https://civitai.com/api/download/models/802216" # Studio Ghibli
     "https://civitai.com/api/download/models/806347" # Propaganda Poster
-    "https://civitai.com/api/download/models/1090331" # Ghibsky Illustration (Serene and enchanting landscapes)
-    "https://civitai.com/api/download/models/770184" # DucHaiten-Cyberpunk-Edgerunners style
-    # "https://civitai.com/api/download/models/801986" # Vector Art
+    # "https://civitai.com/api/download/models/1090331" # Ghibsky Illustration (Serene and enchanting landscapes)
+    # "https://civitai.com/api/download/models/770184" # DucHaiten-Cyberpunk-Edgerunners style
+
     # "https://civitai.com/api/download/models/805268" # Watercolor Painting
-    "https://civitai.com/api/download/models/1018019" # Scifi Mech Style
-    "https://civitai.com/api/download/models/986970" # Mystical Realms of Light
+    # "https://civitai.com/api/download/models/1018019" # Scifi Mech Style
+    #"https://civitai.com/api/download/models/986970" # Mystical Realms of Light
     # "https://civitai.com/api/download/models/833809" # ATV Collage
     # "https://civitai.com/api/download/models/797418" # PsychedeliK
-    "https://civitai.com/api/download/models/966523" # Mythoscape Painting
+    # "https://civitai.com/api/download/models/966523" # Mythoscape Painting
     # "https://civitai.com/api/download/models/1220237" # Pseudo ukiyo-e style
-    
 )
 
 VAE_MODELS=(
